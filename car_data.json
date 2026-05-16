@@ -1,0 +1,28 @@
+[
+   {
+      "car_model": "Chevrolet",
+      "reg_number": "JKL321",
+      "price_per_day": 60.0,
+      "reservation_date": "2025-04-23"
+   },
+   {
+      "car_model": "BMW",
+      "reg_number": "BMW999",
+      "price_per_day": 90.0,
+      "reservation_date": "2025-04-24"
+   },
+   {
+      "car_model": "Toyota",
+      "reg_number": "ABC123",
+      "price_per_day": 50.0,
+      "car_days": 3,
+      "reservation_date": "2025-04-20"
+   },
+   {
+      "car_model": "Supra",
+      "reg_number": "4212fg",
+      "price_per_day": 35.0,
+      "car_days": 3,
+      "reservation_date": "2"
+   }
+]

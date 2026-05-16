@@ -1,0 +1,10 @@
+[
+   {
+      "username": "moustafa",
+      "car_model": "Honda",
+      "reg_number": "XYZ789",
+      "rental_days": 4.0,
+      "total_cost": 180.0,
+      "reservation_date": "2025-04-21"
+   }
+]
