@@ -30,13 +30,13 @@ The system features a dual-role access control system dividing functionalities b
 
 The operational business logic follows a precise pipeline verified via structured behavioral mapping:
 
-* **Authentication Layer:** Routes users to targeted workspaces depending on security flags (`is_admin`).
-* **Data Layer:** Maintains real-time synchronization between memory lists and physical `.json` databases to prevent state loss.
+* **Authentication Layer:** Routes users to targeted workspaces depending on security flags (is_admin).
+* **Data Layer:** Maintains real-time synchronization between memory lists and physical .json databases to prevent state loss.
 * **Inventory Control:** Implements atomic delete-on-booking operations to eliminate double-booking conflicts.
 
-*For a detailed block-by-block breakdown of the application logic, check out the provided flowchart files included in the repository:*
-* `car rental managment.drawio`
-* `car rental managment.drawio.pdf`
+For a detailed block-by-block breakdown of the application logic, check out the provided flowchart files included in the repository:
+* car rental managment.drawio
+* car rental managment.drawio.pdf
 
 ---
 
@@ -44,8 +44,8 @@ The operational business logic follows a precise pipeline verified via structure
 
 The application structures information using core database components:
 
-### 1. Vehicle Fleet Database (`car_data.json`)
-```json
+### 1. Vehicle Fleet Database (car_data.json)
+
 [
    {
       "car_model": "Toyota",
@@ -55,3 +55,41 @@ The application structures information using core database components:
       "reservation_date": "2025-04-20"
    }
 ]
+
+### 2. Transaction Logs (rental_history.json)
+
+[
+   {
+      "username": "moustafa",
+      "car_model": "Honda",
+      "reg_number": "XYZ789",
+      "rental_days": 4.0,
+      "total_cost": 180.0,
+      "reservation_date": "2025-04-21"
+   }
+]
+
+---
+
+## 🛠️ Requirements & Installation
+
+No external heavy frameworks are required. The project runs purely on standard Python libraries.
+
+1. Clone the Repository:
+git clone https://github.com/YOUR_USERNAME/car-rental-management-system.git
+cd car-rental-management-system
+
+2. Verify Database Files:
+Ensure car_data.json, rental_history.json, and users_data.json are present in the root folder alongside the script.
+
+3. Run the Application:
+python "car rental managmnet python.py"
+
+---
+
+## 👥 Contributors
+
+This project was built during Year 1 (Term 1) at SUT by:
+* **Omar Ahmed Ramadan**
+* **Karim Medhat Ibrahim**
+* **Moustafa Mahmoud Taha**
